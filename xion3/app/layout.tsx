@@ -1,0 +1,3 @@
+import './style.css';import Link from 'next/link';
+export const metadata={title:'Xion | Find your next opportunity',description:'Discover extracurricular programs and local community insights across the Bay Area.'};
+export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="en"><body><header className="top"><Link href="/" className="brand">✳ XION<span>.</span></Link><nav><Link href="/">Explore</Link><Link href="/community">Community</Link><a href="/#how">How it works</a></nav><a className="navcta" href="/community">Join the conversation ↗</a></header>{children}<footer><b>✳ XION.</b><span>Discover more. Belong anywhere. · Built for the Bay Area.</span><span>Community-first · English / Español (planned)</span></footer></body></html>}
